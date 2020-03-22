@@ -69,12 +69,12 @@ get the raw HTML. We won't worry about that here though.)
 Nokogiri is a Ruby gem that helps us to parse HTML and collect data from it.
 It allows us to treat a huge string of HTML as if it were a
 series of nested objects that you can use to extract the desired information
-using provided methods. Put simply, Nokogiri takes in HTML and spits out a 
+using provided methods. Put simply, Nokogiri takes in HTML and spits out a
 collection of objects we can get information from.
 
 ![Nokogiri Scraping](https://curriculum-content.s3.amazonaws.com/scraping-reading/Image_11_CodeScraping.png)
 
-The HTML that would normally be rendered as a webpage can be scraped with 
+The HTML that would normally be rendered as a webpage can be scraped with
 Nokogiri into a many small pieces. Nokogiri makes the level of precision required to
 extract the necessary data much easier to attain. It works like a fine-toothed
 saw to scrape only the necessary data. In fact, that's what "nokogiri" means: a
@@ -139,7 +139,7 @@ terminal:
   <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xIIzIXKMny.woff2" as="font" type="font/woff2" crossorigin="anonymous"> 
+  <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xIIzIXKMny.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <script type="text/javascript" async="" src="https://widget.intercom.io/widget/j4d6dyie"></script>
   <script src="https://connect.facebook.net/signals/plugins/inferredEvents.js?v=2.9.4" async=""></script>
   <script src="https://connect.facebook.net/signals/config/1706055166302798?v=2.9.4&amp;r=stable" async=""></script>
@@ -381,7 +381,7 @@ doc.css(".inlineMobileLeft-2Yo002.imageTextBlockGrid3-2XAK6G")
 ```
 
 > Notice that each class is listed without spaces!
-> To make sure we only select the three courses in this section and not also other elements that might share the same class name, we will increase the `specificity` of our CSS selector. In order to make our selector more `strict`, we'll target the correct section first and then the elements containing a course. 
+> To make sure we only select the three courses in this section and not also other elements that might share the same class name, we will increase the `specificity` of our CSS selector. In order to make our selector more `strict`, we'll target the correct section first and then the elements containing a course.
 
 This section has the id `2a778efd-1685-5ec6-9e5a-0843d6a88b7b`, and adding that to the final selector will produce: `.css("#2a778efd-1685-5ec6-9e5a-0843d6a88b7b .inlineMobileLeft-2Yo002.imageTextBlockGrid3-2XAK6G")`.
 Even though the Nokogiri gem returns a `Nokogiri::XML::NodeSet` (which looks like an Array in Ruby), we can use Ruby methods, such as `.each` and `.collect`,
